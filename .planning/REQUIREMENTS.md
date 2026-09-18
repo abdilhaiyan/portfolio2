@@ -86,36 +86,36 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| CONT-05 | — | Pending |
-| CONT-06 | — | Pending |
-| MOBL-01 | — | Pending |
-| MOBL-02 | — | Pending |
-| MOBL-03 | — | Pending |
-| MOBL-04 | — | Pending |
-| PERF-01 | — | Pending |
-| PERF-02 | — | Pending |
-| PERF-03 | — | Pending |
-| CONTENT-01 | — | Pending |
-| CONTENT-02 | — | Pending |
-| CONTENT-03 | — | Pending |
-| CONTENT-04 | — | Pending |
-| SEO-01 | — | Pending |
-| A11Y-01 | — | Pending |
-| A11Y-02 | — | Pending |
-| A11Y-03 | — | Pending |
-| A11Y-04 | — | Pending |
-| DEPL-01 | — | Pending |
-| DEPL-02 | — | Pending |
+| CONT-01 | Phase 1 | Pending |
+| CONT-02 | Phase 1 | Pending |
+| CONT-03 | Phase 1 | Pending |
+| CONT-04 | Phase 1 | Pending |
+| CONT-05 | Phase 1 | Pending |
+| CONT-06 | Phase 1 | Pending |
+| MOBL-01 | Phase 2 | Pending |
+| MOBL-02 | Phase 2 | Pending |
+| MOBL-03 | Phase 2 | Pending |
+| MOBL-04 | Phase 2 | Pending |
+| PERF-01 | Phase 3 | Pending |
+| PERF-02 | Phase 3 | Pending |
+| PERF-03 | Phase 3 | Pending |
+| CONTENT-01 | Phase 3 | Pending |
+| CONTENT-02 | Phase 3 | Pending |
+| CONTENT-03 | Phase 3 | Pending |
+| CONTENT-04 | Phase 3 | Pending |
+| SEO-01 | Phase 3 | Pending |
+| A11Y-01 | Phase 3 | Pending |
+| A11Y-02 | Phase 3 | Pending |
+| A11Y-03 | Phase 3 | Pending |
+| A11Y-04 | Phase 3 | Pending |
+| DEPL-01 | Phase 4 | Pending |
+| DEPL-02 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 24 total
-- Mapped to phases: 0
-- Unmapped: 24 ⚠️ (filled during roadmap creation)
+- Mapped to phases: 24
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-09-18*
-*Last updated: 2026-09-18 after initial definition*
+*Last updated: 2026-09-18 after roadmap creation*
