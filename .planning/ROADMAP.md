@@ -34,12 +34,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. When Firestore or EmailJS fails, the visitor is offered a working mailto/WhatsApp fallback
   5. Abdil can follow the setup guide to create the Firebase project and paste his own config keys; after setup, a test submission verifies the full chain end-to-end and spam protections (honeypot, rate limits, field validation) reject automated submissions
 
-**Plans**: 2 plans
+**Plans**: 1/2 plans executed
 
 Plans:
 **Wave 1**
 
-- [ ] 01-01-PLAN.md — implementation: contact-form.js dual-leg delivery (Firestore write + EmailJS alert), page wiring (honeypot, D-19 script order, index.js shrink, .hp-field), SETUP.md guide
+- [x] 01-01-PLAN.md — implementation: contact-form.js dual-leg delivery (Firestore write + EmailJS alert), page wiring (honeypot, D-19 script order, index.js shrink, .hp-field), SETUP.md guide
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 (Phases 1 and 2 are indepen
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Working Contact Form | 0/2 | Not started | - |
+| 1. Working Contact Form | 1/2 | In Progress|  |
 | 2. Mobile-First Responsive Layout | 0/0 | Not started | - |
 | 3. Performance, Content & Accessibility Polish | 0/0 | Not started | - |
 | 4. Deployment & Security Gate | 0/0 | Not started | - |

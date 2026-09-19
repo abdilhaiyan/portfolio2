@@ -9,12 +9,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Contact Form
 
-- [ ] **CONT-01**: Visitor can submit the contact form and the message is written to Firestore `messages` collection (create-only security rules, `serverTimestamp`, no reads)
-- [ ] **CONT-02**: Visitor receives honest status feedback: sending / success / error states (success shown only after Firestore write resolves)
-- [ ] **CONT-03**: Abdil receives an email alert for each submitted message via EmailJS (free tier, no backend)
-- [ ] **CONT-04**: Form shows a mailto/WhatsApp fallback when Firestore or EmailJS fails (partial-failure handling)
-- [ ] **CONT-05**: Form is protected against spam via honeypot + EmailJS `blockHeadless`/`blockList`/`limitRate` + Firestore field validation
-- [ ] **CONT-06**: Step-by-step Firebase + EmailJS setup guide exists so Abdil can create the project and paste his own config keys
+- [x] **CONT-01**: Visitor can submit the contact form and the message is written to Firestore `messages` collection (create-only security rules, `serverTimestamp`, no reads)
+- [x] **CONT-02**: Visitor receives honest status feedback: sending / success / error states (success shown only after Firestore write resolves)
+- [x] **CONT-03**: Abdil receives an email alert for each submitted message via EmailJS (free tier, no backend)
+- [x] **CONT-04**: Form shows a mailto/WhatsApp fallback when Firestore or EmailJS fails (partial-failure handling)
+- [x] **CONT-05**: Form is protected against spam via honeypot + EmailJS `blockHeadless`/`blockList`/`limitRate` + Firestore field validation
+- [x] **CONT-06**: Step-by-step Firebase + EmailJS setup guide exists so Abdil can create the project and paste his own config keys
 
 ### Mobile Responsive
 
@@ -86,12 +86,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CONT-01 | Phase 1 | Pending |
-| CONT-02 | Phase 1 | Pending |
-| CONT-03 | Phase 1 | Pending |
-| CONT-04 | Phase 1 | Pending |
-| CONT-05 | Phase 1 | Pending |
-| CONT-06 | Phase 1 | Pending |
+| CONT-01 | Phase 1 | Complete |
+| CONT-02 | Phase 1 | Complete |
+| CONT-03 | Phase 1 | Complete |
+| CONT-04 | Phase 1 | Complete |
+| CONT-05 | Phase 1 | Complete |
+| CONT-06 | Phase 1 | Complete |
 | MOBL-01 | Phase 2 | Pending |
 | MOBL-02 | Phase 2 | Pending |
 | MOBL-03 | Phase 2 | Pending |
@@ -112,6 +112,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEPL-02 | Phase 4 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 24 total
 - Mapped to phases: 24
 - Unmapped: 0 ✓
