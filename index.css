@@ -353,11 +353,14 @@ section {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center; /* Center content horizontally */
+  min-width: 44px; /* MOBL-03: Ensure minimum tap target size */
+  min-height: 44px; /* MOBL-03: Ensure minimum tap target size */
   gap: 0.75rem;
   padding: 0.8rem 1.8rem;
   border-radius: 30px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 0.8rem + 0.25vw, 0.95rem); /* MOBL-02: Fluid typography */
   cursor: pointer;
   transition: all var(--transition-fast);
   border: none;
@@ -1126,24 +1129,40 @@ footer {
   color: var(--text-muted);
 }
 
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.footer-nav a {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
-
-.footer-nav a:hover {
-  color: var(--accent);
-}
-
 .copyright {
   font-size: 0.85rem;
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--accent-gradient);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px rgba(var(--accent-rgb), 0.3);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(var(--accent-rgb), 0.5);
 }
 
 /* Responsive Breakpoints */

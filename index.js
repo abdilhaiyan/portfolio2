@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Skill Bars Animation & Category Filtering ---
   const skillBars = document.querySelectorAll(".skill-level-bar");
-  
+
   // Set width dynamically to trigger CSS transition
   setTimeout(() => {
     skillBars.forEach(bar => {
@@ -93,9 +93,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // --- Back to Top Button ---
+  const backToTopBtn = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTopBtn.classList.add("visible");
+    } else {
+      backToTopBtn.classList.remove("visible");
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   // --- Active Nav Link on Scroll (ScrollSpy) ---
   const sections = document.querySelectorAll("section");
-  
+
   window.addEventListener("scroll", () => {
     let currentSectionId = "";
     const scrollPosition = window.scrollY + 100; // Offset for sticky navbar
@@ -117,4 +132,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  });
+});
