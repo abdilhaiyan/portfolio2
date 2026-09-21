@@ -21,11 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentTheme = htmlElement.getAttribute("data-theme");
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     setTheme(newTheme);
+    themeToggleBtn.setAttribute("aria-pressed", newTheme === "light" ? "true" : "false");
   });
 
   function setTheme(theme) {
     htmlElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
+    themeToggleBtn.setAttribute("aria-pressed", theme === "light" ? "true" : "false");
 
     if (theme === "dark") {
       sunIcon.style.display = "none";
@@ -44,6 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
   menuToggle.addEventListener("click", () => {
     menuToggle.classList.toggle("open");
     navLinksList.classList.toggle("open");
+    const isExpanded = menuToggle.classList.contains("open");
+    menuToggle.setAttribute("aria-expanded", String(isExpanded));
+    navLinksList.setAttribute("aria-hidden", String(!isExpanded));
   });
 
   // Close mobile menu when clicking a link
