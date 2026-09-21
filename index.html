@@ -7,11 +7,30 @@
   <meta name="description" content="Portfolio of Abdil Haiyan Hilmi, an accomplished Accountant and Financial Manager specializing in accounting, taxation, internal audit, and financial system implementation.">
   <meta name="keywords" content="Accountant, Finance, Portfolio, AutoCount, ABSS, MYOB, Audit, Taxation, Seremban, Malaysia">
   
+  <!-- Google Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="index.css">
   
-  <!-- Lucide Icons CDN -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons CDN (pinned v0.472.0) -->
+  <script src="https://unpkg.com/lucide@0.472.0/dist/umd/lucide.min.js" defer></script>
+
+  <!-- Open Graph / Share Preview -->
+  <meta property="og:title" content="Abdil Haiyan Hilmi — Professional Accountant & Financial Manager">
+  <meta property="og:description" content="Abdil Haiyan Hilmi specializes in Accounting, Taxation, and Internal Audit in Seremban, Malaysia. Contact for professional accounting or financial management services.">
+  <meta property="og:image" content="images/profile.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abdil.github.io/portfolio2-main/">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abdil Haiyan Hilmi — Professional Accountant & Financial Manager">
+  <meta name="twitter:description" content="Abdil Haiyan Hilmi specializes in Accounting, Taxation, and Internal Audit in Seremban, Malaysia. Contact for professional accounting or financial management services.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/LOGO2.png">
 </head>
 <body>
 
@@ -33,12 +52,12 @@
       </ul>
 
       <div style="display: flex; align-items: center; gap: 1rem;">
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode" aria-pressed="false">
           <i data-lucide="sun" id="sun-icon" style="display: none;"></i>
           <i data-lucide="moon" id="moon-icon"></i>
         </button>
         
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
           <span></span>
@@ -71,7 +90,7 @@
       <div class="hero-image-wrapper">
         <div class="hero-image-glow"></div>
         <div class="profile-img-container">
-          <img src="images/profile.jpg" onerror="this.onerror=null; this.src='https://media.licdn.com/dms/image/v2/C5103AQFjut616c-nbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1533532217117?e=1731542400&v=beta&t=hSs3SfO0uAr3cxtfhIGz2T_ufl-ogZCs-ncmE1l4Cr4';" alt="Abdil Haiyan Hilmi Profile">
+          <img src="images/profile.jpg" alt="Abdil Haiyan Hilmi Profile">
         </div>
       </div>
     </div>
@@ -144,7 +163,7 @@
           <h3 class="timeline-title">Account Manager</h3>
           <div class="timeline-company">
             Kawal Wiramas Sdn Bhd
-            <a href="https://www.wiramas.com.my/" target="_blank" rel="noopener">
+            <a href="https://www.wiramas.com.my/" target="_blank" rel="noopener" aria-label="Kawal Wiramas Sdn Bhd website" title="Kawal Wiramas Sdn Bhd website">
               <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
             </a>
           </div>
@@ -425,7 +444,7 @@
       <!-- Left Column: Contact info cards -->
       <div class="contact-info-panel">
         <div class="glass-card contact-profile-summary">
-          <img src="images/profile.jpg" onerror="this.onerror=null; this.src='https://media.licdn.com/dms/image/v2/C5103AQFjut616c-nbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1533532217117?e=1731542400&v=beta&t=hSs3SfO0uAr3cxtfhIGz2T_ufl-ogZCs-ncmE1l4Cr4';" alt="Abdil Haiyan Profile">
+          <img src="images/profile.jpg" loading="lazy" alt="Abdil Haiyan Profile">
           <h3>Abdil Haiyan Hilmi</h3>
           <p>Accountant & Financial Manager</p>
         </div>
@@ -497,7 +516,7 @@
             <span class="form-error-msg">Please enter your message</span>
           </div>
 
-          <div id="form-status" class="form-status-alert"></div>
+          <div id="form-status" class="form-status-alert" aria-live="polite" aria-atomic="true"></div>
 
           <button type="submit" class="btn btn-primary form-submit-btn">
             <i data-lucide="send"></i> Send Message

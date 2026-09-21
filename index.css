@@ -1068,7 +1068,8 @@ section {
 }
 
 .form-control:focus {
-  outline: none;
+  outline: 2px solid var(--input-focus);
+  outline-offset: 2px;
   border-color: var(--input-focus);
   box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.15);
 }
@@ -1293,4 +1294,36 @@ footer {
   .form-row {
     grid-template-columns: 1fr;
   }
+}
+
+/* Accessibility: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .skill-level-bar {
+    transition: none !important;
+  }
+}
+
+/* Accessibility: visible focus rings on all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--input-focus);
+  outline-offset: 2px;
+}
+
+/* Accessibility: theme toggle aria state styling */
+.theme-toggle-btn[aria-pressed="true"] {
+  box-shadow: 0 0 0 2px var(--input-focus);
 }
