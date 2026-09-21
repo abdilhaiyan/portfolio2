@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Page Not Found | Abdil Haiyan Hilmi</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .error-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-size: 5rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .error-message {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .back-btn {
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      background: var(--accent-gradient);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all var(--transition-fast);
+    }
+    .back-btn:hover {
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-code">404</div>
+    <div class="error-message">Page not found</div>
+    <a href="index.html" class="back-btn">Back to Home</a>
+  </div>
+</body>
+</html>
