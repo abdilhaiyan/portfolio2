@@ -1120,6 +1120,13 @@ textarea.form-control {
   display: block;
 }
 
+.form-status-alert.is-sending {
+  background: rgba(251, 191, 36, 0.15);
+  border: 1px solid rgba(251, 191, 36, 0.5);
+  color: #f59e0b;
+  display: block;
+}
+
 /* Footer Section */
 footer {
   background: var(--bg-secondary);
